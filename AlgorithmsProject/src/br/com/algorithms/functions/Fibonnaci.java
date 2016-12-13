@@ -3,7 +3,7 @@ package br.com.algorithms.functions;
 public class Fibonnaci {
 	
 	public static int fibonnaci(int number) {
-		if (number < -1) {
+		if (number <= -1) {
 			throw new RuntimeException("Invalid number, should be greater or equals than zero");
 		}
 		
@@ -25,7 +25,7 @@ public class Fibonnaci {
 	}
 	
 	public static int recursiveFibonnaci(int number) {
-		if (number < -1) {
+		if (number <= -1) {
 			throw new RuntimeException("Invalid number, should be greater or equals than zero");
 		} else if (number <= 2) {
 			return number == 0 ? 0 : 1;
