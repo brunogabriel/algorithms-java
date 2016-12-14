@@ -28,7 +28,7 @@ public class BinarySearch {
 		if (array == null || array.length == 0 || end < start) {
 			return -1;
 		}
-		
+
 		int mid = (start + end) / 2;
 
 		if (array[mid] == value) {
